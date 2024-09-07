@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/spin.css">
+    <link rel="stylesheet" href="css/bounce.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Bernard portfolio  ">
+    <meta name="keywords" content="portfolio">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Tag Manager -->
+    <script src="js/g-tag.js">
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5XDGDF8Q');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="bg-gray-600">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDGDF8Q" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="max-w-7xl overflow-hidden h-screen mx-auto p-20  ">
+        <img src="images/gygs.jpg" class="rounded-full  h-12 w-12" alt="" srcset="">
+        <div class='flex space-x-2 justify-center  items-center  h-screen animate-pulse '>
+            <span class='sr-only' id="spinner">Loading...</span>
+            <div class='h-8 w-8 bg-green-300 rounded-full animate-bounce  [animation-delay:-0.3s]'></div>
+            <div class='h-8 w-8 bg-white rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+            <div class='h-8 w-8 bg-gray-500 rounded-full animate-bounce '></div>
+        </div>
+    </div>
+    <script src="js/spinner.js">
+    </script>
+</body>
+
+</html>

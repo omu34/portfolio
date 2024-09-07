@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    /* Tailwind's md breakpoint */
+    .container {
+        top: 40px;
+        /* Adjust as needed */
+    }
+}
+
+.icon-container {
+    cursor: pointer;
+}
