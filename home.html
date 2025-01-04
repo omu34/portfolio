@@ -18,48 +18,63 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
-<body class="font-bellMT">
+<body class="bellMT">
     <!-- NavBar -->
+    
+
+
+
+
     <section class="w-full sticky top-0 z-50">
         <nav class="bg-gray-800 text-white py-4">
             <div class="container mx-auto px-4">
                 <div class="py-4 lg:px-8 px-4 max-w-[1280px] h-16 m-auto text-white flex items-center justify-between">
                     <div>
-                        <h1 class="lg:text-2xl text-xl uppercase tracking-wider cursor-pointer ">
-                            <a target="_blank" aria-current="page"
-                                class='block py-2 px-3 md:text-2xl text-lg    text-gray-100 rounded bg-transparent md:text-gray-200 md:hover:bg-transparent md:hover:text-green-400 md:p-0 md:dark:text-gray-200'
-                                href='index.html '>🚀My Quirky Portfolio🎨</a>
+                        <h1 class="lg:text-2xl text-xl uppercase tracking-wider cursor-pointer font-bold">
+                            <a aria-current='page'
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-gray-100 rounded bg-transparent md:text-gray-200 md:hover:bg-transparent md:hover:text-green-400 md:p-0 md:dark:text-gray-200'
+                                href='index.html'>🚀My Quirky Portfolio🎨</a>
                         </h1>
                     </div>
-                    <div class="lg:flex hidden gap-8 uppercase tracking-wider cursor-pointer text-lg items-center">
-                        <button
-                            class='block py-2 px-3 md:text-2xl text-lg    text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white  '
-                            onclick="scrollToSection('section1')">💡Projects</button>
-                        <button aria-current="page"
-                            class='block py-2 px-3 md:text-2xl text-lg    text-gray-100 rounded bg-transparent md:text-gray-200 md:hover:bg-transparent md:hover:text-green-400 md:p-0 md:dark:text-gray-200'
-                            onclick="scrollToSection('section2')">🚀About</button>
-                        <button
-                            class='block py-2 px-3 md:text-2xl text-lg    text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white'
-                            onclick="scrollToSection('section3')">🎨Contacts</button>
+                    <div class="flex lg:gap-8 gap-6 uppercase tracking-wider cursor-pointer text-lg items-center"
+                        id="navItems">
+                        <span class="group">
+                            <button
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white  '
+                                href='' onclick="scrollToSection('section1')">💡Projects</button>
+                            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+                        </span>
+                        <span class="group">
+                            <button aria-current='page'
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-gray-100 rounded bg-transparent md:text-gray-200 md:hover:bg-transparent md:hover:text-green-400 md:p-0 md:dark:text-gray-200'
+                                href='' onclick="scrollToSection('section2')">🚀About</button>
+                            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+                        </span>
+    
+                        <span class="group">
+                            <button
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white'
+                                href='' onclick="scrollToSection('section3')">🎨Contacts</button>
+                            <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+                        </span>
                     </div>
-                    <button id="hamburger" class="block lg:hidden fa fa-bars flex items-center text-xl" title="Menu"></button>
+                    <div id="hamburger" class="fa fa-bars flex items-center text-xl" style="display:none;"></div>
+                    <div id="mobileNav"
+                        class="fixed flex flex-col gap-8 pt-16 px-4 text-xl uppercase bg-teal-500 h-1/2 inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
+                        <span><button
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white  '
+                                href='' onclick="scrollToSection('section1')">💡Projects🚀</button></span>
+                        <span><button aria-current='page'
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-gray-100 rounded bg-transparent md:text-gray-200 md:hover:bg-transparent md:hover:text-green-400 md:p-0 md:dark:text-gray-200'
+                                href='' onclick="scrollToSection('section2')">🚀About🚀</button></span>
+                        <span><button
+                                class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white'
+                                href='' onclick="scrollToSection('section3')">🎨Contacts🚀</button></span>
+                    </div>
                 </div>
             </div>
         </nav>
     </section>
-
-    <div id="mobileNav"
-        class="fixed flex  flex-col gap-8 pt-16 px-4 text-xl uppercase bg-teal-500 h-1/2 inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer hidden">
-        <button
-            class='block py-2 px-3 md:text-2xl text-lg  md:  text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white  '
-            onclick="scrollToSection('section1')">💡Projects</button>
-        <button aria-current='page'
-            class='block py-2 px-3 md:text-2xl text-lg  md:  text-gray-100 rounded bg-transparent md:text-gray-200 md:hover:bg-transparent md:hover:text-green-400 md:p-0 md:dark:text-gray-200'
-            onclick="scrollToSection('section2')">🚀About</button>
-        <button
-            class='block py-2 px-3 md:text-2xl text-lg  md:  text-white rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white'
-            onclick="scrollToSection('section3')">🎨Contacts</button>
-    </div>
 
 
 
@@ -109,7 +124,7 @@
 
     <!-- About Section -->
     <section id="section2" class="bg-slate-200 pt-12 sm:pt-20 md:pt-8 md:pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos-duration="1000" data-aos="fade-up">
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-6">
                 <!-- Profile Card -->
                 <div class="sm:col-span-4">
@@ -225,7 +240,7 @@
                             </div>
                         </div>
 
-                        <h3 class="text-lg  text-center font-bold">Find Me On</h3>
+                        <h3 class="text-lg md:text-2xl  text-center font-bold">Find Me On</h3>
                         <div class="flex justify-center gap-6 mt-6 md:mt-1">
                             <a target="_blank" href="https://linkedin.com/in/bernard-rygss-8a25121b3/" class="text-white hover:text-orange-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
@@ -285,11 +300,11 @@
 
 
     <!-- relative sections -->
-    <div class="relative" data-aos="fade-up">
+    <div class="relative" >
         <!-- Projects Section -->
         <div class="pb-20 pt-20 mb-1 bg-white sticky top-0 z-10" id="section1">
-            <div data-aos="fade-up" data-aos-duration="1000"
-                class="px-4 mx-auto max-w-screen-xl text-center mt-4 h-auto" data-aos="fade-down ">
+            <div  data-aos-duration="1000" data-aos="fade-down "
+                class="px-4 mx-auto max-w-screen-xl text-center mt-4 h-auto" >
                 <div class="flex flex-col items-center justify-start md:justify-center pt-2">
                     <h2
                         class="text-xl md:text-3xl  font-bold text-center uppercase mb-4 text-red-900 font-playfair-l w-fit pb-1 px-2 rounded-md border-b-2 border-red-800">
@@ -302,7 +317,7 @@
                     </p>
                 </div>
 
-                <div data-aos="fade-down-right"
+                <div data-aos="fade-down-right" data-aos-duration="1000" 
                     class="h-auto w-full flex items-center justify-center overflow-hidden bg-purple ">
                     <div class="relative lg:w-[290px] lg:h-[290px] md:w-[220px] md:h-[220px] sm:w-[180px] sm:h-[180px] w-[150px] h-[150px] [transform-style:preserve-3d]"
                         style="animation: rotate 30s linear infinite;">
@@ -472,7 +487,7 @@
 
         <!-- Contact Section -->
         <section class="sticky top-0 h-screen bg-gray-200 z-30" id="section3">
-            <div class="container mx-auto px-4 py-16 ">
+            <div class="container mx-auto px-4 py-16 " data-aos-duration="1000" data-aos="fade-up">
                 <h2 class="text-4xl  mb-8 text-center md:mt-32">✉️ Get in Touch!</h2>
                 <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
