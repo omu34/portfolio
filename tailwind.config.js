@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bellMT: ['"Bell MT"', 'serif'],
+        'bellmt': ['"Bell MT"', 'serif'], 
+        'bellmt-italic': ['"Bell MT Italic"', 'serif'],
+        'bellmt-bold': ['"Bell MT Bold"', 'serif'],
       },
     },
   },
