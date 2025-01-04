@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Bell MT';
-  src: url('/fonts/BellMT.woff') format('woff'), 
+  src: url('/fonts/BellMT.woff') format('woff'),
        url('/fonts/BellMT.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: 'BellMT';
+  font-family: 'Bell MT';
   src: url('/fonts/BellMTBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;

@@ -6,11 +6,9 @@ module.exports = {
       fontFamily: {
         bellMT: ['"Bell MT"', 'serif'],
       },
+    },
   },
-},
-  plugins: [
-    
+  plugins: [],
+};
 
-  ],
-}
 
