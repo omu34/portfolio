@@ -19,36 +19,22 @@ module.exports = {
         'bellmt-italic': ['Bell MT Italic', 'serif'],
         'bellmt-bold': ['Bell MT Bold', 'serif']
       },
-    },
-    animation: {
-      typewriter: 'typewriter 2s steps(11) forwards',
-      caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
-    },
-    keyframes: {
-      typewriter: {
-        to: {
-          left: '100%',
+    
+      animation: {
+        typewriter: 'typing 2s steps(7, end) forwards, blink 0.8s step-end infinite 2s',
+      },
+      keyframes: {
+        typing: {
+          from: { width: '0' },
+          to: { width: '10ch' }, // Adjust '10ch' based on the number of characters in your text
+        },
+        blink: {
+          '0%, 100%': { borderColor: 'transparent' },
+          '50%': { borderColor: 'black' },
         },
       },
-      blink: {
-        '0%': {
-          opacity: '0',
-        },
-        '0.1%': {
-          opacity: '1',
-        },
-        '50%': {
-          opacity: '1',
-        },
-        '50.1%': {
-          opacity: '0',
-        },
-        '100%': {
-          opacity: '0',
-        },
-      },
-    },
   
+    },
   },
   plugins: [],
 };
