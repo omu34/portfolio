@@ -37,5 +37,17 @@ function scrollToSection(sectionId) {
     isPaused = true;
     setTimeout(() => {
         isPaused = false; // Re-enable interactions after the pause
-    }, 2000);
+    }, 4000);
 }
+
+
+// function scrollToSection(sectionId) {
+//     const section = document.getElementById(sectionId);
+//     if (section) {
+//         section.scrollIntoView({
+//             behavior: 'smooth', // Smooth scrolling
+//             block: 'start',    // Align to the top of the viewport
+//         });
+//     }
+// }
+
