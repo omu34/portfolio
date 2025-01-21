@@ -1,7 +1,7 @@
 const targets = [
-  { element: document.getElementById('starsCount'), count: 60, suffix: '+' },
-  { element: document.getElementById('downloadsCount'), count: 550, suffix: '+' },
-  { element: document.getElementById('sponsorsCount'), count: 46, suffix: '+' }
+  { element: document.getElementById('starsCount'), count: 5, suffix: '+' },
+  { element: document.getElementById('downloadsCount'), count: 35, suffix: '+' },
+  { element: document.getElementById('sponsorsCount'), count: 100, suffix: '+' }
 ];
 
 // Find the maximum count among all targets
