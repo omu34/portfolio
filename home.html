@@ -18,15 +18,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
-<body class="font-bellmt md:text-lg text-md overflow-x-hidden  bg-black text-white pb-10">
+<body class="font-bellmt  md:text-lg text-md overflow-x-hidden  bg-black text-white pb-10">
 
     <header class=" flex flex-wrap sticky top-0   flex-1 items-center shadow-lg  z-50   mx-auto">
-        <section class="w-full z-50  mx-auto bg-gray-800 max-w-screen-xl pl-1 pr-1 mt-1.5 rounded-lg">
-            <nav class="md:py-4 ">
+        <section class="w-full z-50  mx-auto bg-gray-800 max-screen-10xl  pl-1 pr-1 mt-1.5 rounded-lg">
+            <nav class="md:py-2  mx-auto max-w-screen-xl">
                 <!-- <div class=""> -->
-                <div class="  text-white flex items-center justify-between mr-2 md:mr-0">
+                <div class="  text-white  flex items-center justify-between mr-2 md:mr-0">
                     <div>
-                        <h1 class="lg:text-2xl text-2xl uppercase tracking-wider cursor-pointer font-bold">
+                        <h1 class="lg:text-2xl text-2xl uppercase tracking-wider cursor-pointer font-bellmt">
                             <a href="index.html"
                                 class="block py-2 px-3 text-lg font-medium text-gray-100 hover:text-green-400">
                                 🚀Bernard🎨 <p class="text-sm">Nairobi/Kenya</p>
@@ -69,24 +69,33 @@
 
 
 
-    <section id="banner" style="scroll-margin-top: 4rem;" class=" md:h-screen h-[400px] flex items-center justify-center -mt-20 sm:mt-0 md:mt-0">
+    <section id="banner" style="scroll-margin-top: 4rem;"
+        class=" md:h-screen h-[400px] flex items-center justify-center -mt-20 sm:mt-0 md:mt-0">
         <div
-            class="relative flex-1 flex justify-center items-center text-black mx-auto max-w-screen-xxl min-h-screen md:h-screen sm:h-[180px] pb-10 md:mt-12 md:mb-12">
+            class="relative flex-1 flex justify-center items-center text-black mx-auto max-w-screen  min-h-screen md:h-screen sm:h-[180px] pb-10 md:mt-12 md:mb-12">
 
             <!-- Background image with opacity, rounded corners, and left margin -->
             <div
                 class="absolute inset-0 flex items-center justify-center bg-no-repeat bg-contain bg-center opacity-30 rounded-lg">
                 <!-- Centered Image -->
-                <img class="w-[300px] md:h-[300px] h-[500px] rounded-lg object-cover" src="images/my-profile.webp"
+                <!-- <img class="w-[300px] md:h-[400px] md:w-[400px] h-[500px] rounded-lg object-cover md:ml-20 " src="images/my-profile.webp"
+                    alt="Profile Image"> -->
+
+                <img class="w-full h-full object-cover object-[70%_40%] rounded-lg" src="images/my-profile.webp"
                     alt="Profile Image">
+
+
+
+
             </div>
 
             <div
-                class="lg:px-16 xs:px-4 px-8 py-10 pb-4 flex xs:flex-col sm:flex-row sm:items-center text-white relative z-10">
+                class=" mx-auto max-w-screen-xxl lg:px-16 xs:px-4 px-8 py-10 pb-4 flex xs:flex-col sm:flex-row sm:items-center text-white relative z-10">
                 <div class="w-full flex flex-col text-center md:text-left">
-                    <h4 class="text-lg font-semibold xl:text-2xl">Hey There</h4>
+                    <h4 class="text-lg font-bellmt font-semibold xl:text-2xl">Hey There</h4>
                     <h1 class="xl:text-7xl sm:text-4xl xs:text-3xl font-semibold font-serif mt-2 text-2xl">
-                        <span class="inline-block overflow-hidden border-r-2 border-black animate-typewriter whitespace-nowrap">I'm
+                        <span
+                            class="inline-block overflow-hidden font-bellmt border-r-2 border-black animate-typewriter whitespace-nowrap">I'm
                             Bernard</span>
                     </h1>
 
@@ -107,11 +116,12 @@
                 </div>
 
                 <!-- col-2 -->
-                <div  id="countingSection"
+                <div id="countingSection"
                     class="w-full flex sm:flex-col xs:justify-center xs:mt-4 sm:mt-0 sm:gap-8 xs:gap-2 xs:bg-gray-700/60 sm:bg-transparent p-4 rounded-lg">
                     <div class="flex flex-col sm:items-end xs:items-center">
                         <div class="inline-flex gap-1 items-center">
-                            <h2  id="starsCount" class="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">5</h2>
+                            <h2 id="starsCount" class="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">5
+                            </h2>
                             <h2 class="text-rose-500 xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">+
                             </h2>
                         </div>
@@ -119,7 +129,8 @@
                     </div>
                     <div class="flex flex-col sm:items-end xs:items-center">
                         <div class="inline-flex gap-1 items-center">
-                            <h2 id="downloadsCount" class="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">35</h2>
+                            <h2 id="downloadsCount"
+                                class="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">35</h2>
                             <h2 class="text-rose-500 xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">+
                             </h2>
                         </div>
@@ -127,7 +138,8 @@
                     </div>
                     <div class="flex flex-col sm:items-end xs:items-center">
                         <div class="inline-flex gap-1 items-center">
-                            <h2 id="sponsorsCount" class="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">100</h2>
+                            <h2 id="sponsorsCount"
+                                class="xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-semibold">100</h2>
                             <h2 class="text-rose-500 xl:text-8xl md:text-7xl sm:text-6xl xs:text-3xl font-extrabold">+
                             </h2>
                         </div>
@@ -140,7 +152,8 @@
 
 
 
-    <section id="section1" class=" md:h-screen h-[400px] mt-16  rounded-lg md:ml-0 md:mr-0 mr-2 ml-2 md:mt-0"  style="background-color: rgb(244, 249, 252); scroll-margin-top: 4rem;">
+    <section id="section1" class=" md:h-screen h-[400px] mt-16  rounded-lg md:ml-0 md:mr-0 mr-2 ml-2 md:mt-0"
+        style="background-color: rgb(244, 249, 252); scroll-margin-top: 4rem;">
         <!-- Projects Section -->
         <div class="md:pb-20 md:pt-20  pt-2 pb-2  z-30">
             <div data-aos-duration="1000" data-aos="fade-down "
@@ -164,7 +177,7 @@
                         <span style="--i:1"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="hover:bg-gray-400 pb-3  bg-white hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="hover:bg-gray-400 pb-2  bg-white hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="py-4 md:py-5 px-8">
                                     <a target="_blank" href="https://smile-for-neurodiversity.netlify.app">
                                         <h1 class="text-md  font-semibold text-red-900 mb-1">Smile For
@@ -172,7 +185,7 @@
                                     </a><a target="_blank" href="https://smile-for-neurodiversity.netlify.app"
                                         class=" text-red-600 hover:text-red-600 ">
                                         Check it out! 🚀
-                                        <img src="images/smile-logo.jpg" class="w-48 h-28 object-cover rounded-lg">
+                                        <img src="images/smile-logo.jpg" class="w-48 h-20 object-cover rounded-lg">
                                         <hr class="mt-1">
                                     </a>
 
@@ -183,7 +196,7 @@
                         <span style="--i:2"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="bg-gray-200 pb-2 hover:bg-gray-300 hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="bg-gray-200 pb-1 hover:bg-gray-300 hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="py-4 md:py-4 px-8">
                                     <a target="_blank" href="https://masika-koross.netlify.app">
                                         <h1 class="mb-0.5 text-sm md:text-md  font-semibold text-red-900">
@@ -193,7 +206,7 @@
                                         class=" text-red-600 hover:text-red-600 ">
                                         Check it out! 🚀
                                         <img src="https://mmsadvocates.co.ke/wp-content/uploads/2023/05/Our-Team-4.jpg"
-                                            class="w-48 rounded-lg">
+                                            class="w-48 h-32 rounded-lg">
                                         <hr class="mt-1.5">
                                     </a>
 
@@ -203,7 +216,7 @@
                         <span style="--i:3"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="hover:bg-gray-400 pb-2 bg-white hover:text-white  mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="hover:bg-gray-400  bg-white hover:text-white  mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="md:py-8 py-4 px-8">
                                     <a target="_blank" href="https://vehiclesales.co-opbank.co.ke/">
                                         <h1 class="mb-4 text-sm md:text-md  font-semibold text-red-900">Co-op
@@ -213,7 +226,7 @@
                                     <a target="_blank" href="https://vehiclesales.co-opbank.co.ke/"
                                         class=" text-red-600 hover:text-red-600 ">
                                         Check it out! 🚀
-                                        <img src="images/coop.jpg" class="w-48 h-20 rounded-lg">
+                                        <img src="images/coop.jpg" class="w-48 h-16 rounded-lg">
                                         <hr class="mt-1">
                                     </a>
 
@@ -223,7 +236,7 @@
                         <span style="--i:4"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="bg-gray-200 pb-2 hover:bg-gray-300 hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="bg-gray-200 pb-1 hover:bg-gray-300 hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="py-4 md:py-2 px-8">
                                     <a target="_blank" href="https://newsroom.belvadigital.com/">
                                         <h1 class="mb-0.5 text-sm md:text-md  font-semibold text-red-900">KPLC CMS
@@ -242,7 +255,7 @@
                         <span style="--i:5"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="hover:bg-gray-400 pb-2 bg-white hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="hover:bg-gray-400 pb- bg-white hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="py-4 md:py-6 px-8">
                                     <a target="_blank" href="https://axis-web-test.belva.co.ke/">
                                         <h1 class="mb-0.5 text-sm md:text-md  font-semibold text-red-900">Axis
@@ -279,7 +292,7 @@
                         <span style="--i:7"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="hover:bg-gray-400 pb-2 bg-white hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="hover:bg-gray-400 pb- bg-white hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="py-4 md:py-8 px-8">
                                     <a target="_blank" href="https://vehiclesales.co-opbank.co.ke/">
                                         <h1 class="mb-4 text-sm md:text-md  font-semibold text-red-900">Co-op
@@ -288,7 +301,7 @@
                                     </a><a target="_blank" href="https://vehiclesales.co-opbank.co.ke/"
                                         class=" text-red-600 hover:text-red-600 ">
                                         Check it out! 🚀
-                                        <img src="images/coop.jpg" class="w-48 h-20 rounded-lg">
+                                        <img src="images/coop.jpg" class="w-48 h-16 rounded-lg">
                                         <hr class="mt-1.5">
                                     </a>
 
@@ -298,7 +311,7 @@
                         <span style="--i:8"
                             class="absolute top-0 left-0 w-full h-full origin-center [transform-style:preserve-3d] lg:[transform:rotateY(calc(var(--i)*45deg))_translateZ(350px)] md:[transform:rotateY(calc(var(--i)*45deg))_translateZ(265px)] sm:[transform:rotateY(calc(var(--i)*45deg))_translateZ(216px)] [transform:rotateY(calc(var(--i)*45deg))_translateZ(150px)]">
                             <div
-                                class="bg-gray-200 hover:bg-gray-300 pb-2 hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
+                                class="bg-gray-200 hover:bg-gray-300 pb-1 hover:text-white mt-8 transition duration-300 max-w-sm rounded overflow-hidden shadow-xl">
                                 <div class="py-4 md:py-3 px-8">
                                     <a target="_blank" href="https://newsroom.belvadigital.com/">
                                         <h1 class="mb-0.5 text-sm md:text-md  font-semibold text-red-900">KPLC CMS
@@ -321,7 +334,8 @@
     </section>
 
 
-    <section id="section2" style="scroll-margin-top: 4rem;" class="sticky top-0 md:h-screen h-[550px] bg-black -mt-28 rounded-lg md:ml-0 md:mr-0 mr-2 ml-2 md:mt-0">
+    <section id="section2" style="scroll-margin-top: 4rem;"
+        class="sticky top-0 md:h-screen h-[550px] bg-black -mt-28 rounded-lg md:ml-0 md:mr-0 mr-2 ml-2 md:mt-0">
         <!-- About Section -->
         <div class="sticky top-0  flex flex-col items-center justify-center ">
             <div class="max-w-7xl  mx-auto px-4 py-16 sm:px-6 lg:px-8" data-aos-duration="1000" data-aos="fade-up">
@@ -508,7 +522,8 @@
 
 
 
-    <section id="section3" class=" sticky top-0 h-screen  md:pb-0 pb-56 mt-40 sm:mt-96 md:mt-0"  style="background-color: rgb(244, 249, 252); scroll-margin-top: 4rem;">
+    <section id="section3" class=" sticky top-0 h-screen  md:pb-0 pb-56 mt-40 sm:mt-96 md:mt-6"
+        style="background-color: rgb(244, 249, 252); scroll-margin-top: 4rem;">
         <!-- Contact Section -->
         <div class="sm:pb-20 sm:pt-0  sticky top-0  z-40">
             <div class="container mx-auto px-4 py-16 " data-aos-duration="1000" data-aos="fade-up">

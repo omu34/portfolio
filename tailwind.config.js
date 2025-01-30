@@ -15,9 +15,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'bellmt': ['Bell MT', 'serif'],
-        'bellmt-italic': ['Bell MT Italic', 'serif'],
-        'bellmt-bold': ['Bell MT Bold', 'serif']
+        'bellmt': ['Unbounded', 'serif'],
+        'bellmt-bold': ['Unbounded', 'bold'],
       },
     
       animation: {
